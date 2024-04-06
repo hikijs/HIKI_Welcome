@@ -12,7 +12,7 @@
     <title>Cover - Facebook</title>
 </head>
 <body>
-    
+    <!-- Navbar container -->
     <div class="container">
 
         <nav>
@@ -39,10 +39,93 @@
             <i class="fa-solid fa-plus"></i>
             <i class="fa-brands fa-facebook-messenger"></i>
             <i class="fa-solid fa-bell"></i>
-            <img src="image/profilepic.jpeg" alt="">
+
+            <!-- Drop dow menu form profile img -->
+            <img src="image/profilepic.jpeg" alt="" class="profile-pic" onclick="openCard()">
+            <div class="card-menu-wrap" id="cardWrap">
+                <div class="card-menu"s>
+                    <div class="profile-menu">
+                        <img src="image/profilepic.jpeg" alt="">
+                        <p>ParabolHoang</p>
+                    </div>
+
+                    <a href="#" class="card-menu-list">
+                        <i class="fa-brands fa-meta"></i>
+                        <p>Face Suite</p>
+                        <span></span>
+                    </a>
+                    <a href="#" class="card-menu-list">
+                        <i class="fa-solid fa-gear"></i>
+                        <p>Setting & privacy</p>
+                        <span></span>
+                    </a>
+                    <a href="#" class="card-menu-list">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <p>Help & support </p>
+                        <span></span>
+                    </a>
+                    <a href="#" class="card-menu-list">
+                        <i class="fa-solid fa-moon"></i>
+                        <p>Display & accessbility</p>
+                        <span></span>
+                    </a>
+                    <a href="#" class="card-menu-list">
+                        <i class="fa-solid fa-exclamation"></i>
+                        <p>Give feedback</p>
+                        <span></span>
+                    </a>
+                    <a href="#" class="card-menu-list">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <p>Log out</p>
+                    </a>
+                </div>
+            </div>
        </div>
 
         </nav>
-    </div>
-</body>
+
+
+      <!-- --------  Main Section ----- -->
+
+      <div class="main">
+            <!-- -------- Left section ----------- -->
+            <div class="main-left">
+                <div class="img">
+                    <img src="image/profilepic.jpeg" alt="">
+                    <p>ParabolHoang</p>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-user-group"></i>
+                    <p>Friends</p>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <p>Saved</p>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-people-group"></i>
+                    <p>Groups</p>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-brain"></i>
+                    <p>Memories</p>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-video"></i>
+                    <p>Video</p>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-arrow-down-wide-short"></i>
+                    <p>See more</p>
+                </div>
+            </div>
+
+            <!-- -----Center code here----- -->
+            <!-- ------- Right section code here ---- -->
+      </div>
+    
+        <script src="script.js"></script>
+    </body>
 </html>
+                        
+                    

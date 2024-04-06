@@ -71,13 +71,14 @@ nav{
 }
 
 .nav-center i{
+    margin: auto;
     width: 110px;
     background: none;
     border-radius: 10px;
-    margin-left: 12px;
     font-size: 22px;
     padding: 13px 40px;
     color: #646262;
+    box-sizing: border-box;
 }
 
 .nav-center .fa-house{
@@ -88,7 +89,7 @@ nav{
 .nav-center .fa-house::after{
     background: #3229ee;
     content: '';
-    width: 100%;
+    width: 110px;
     height: 2px;
     bottom: -6px;
     left: 50%;
@@ -131,4 +132,192 @@ nav{
     align-items: center;
     justify-content: center;
 
+}
+
+
+/* Drop down menu from profile img  */
+.card-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.open-menu {
+    max-height: 400px;
+
+}
+
+.card-menu {
+    width: 330px;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 14px;
+}
+
+.profile-menu {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 12px 0;
+}
+
+.profile-menu p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 550px;
+}
+
+.card-menu-list{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 8px;
+    padding: 5px 0;
+    color: #252525;
+    margin-bottom: 15px;
+}
+
+.card-menu-list:hover {
+    background: #efefef;
+}
+
+.card-menu-list p {
+    width: 100%;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-menu-list span {
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-menu-list i {
+   
+    background: #efefef; 
+    height: 40px;
+    width: 40px;   
+    border-radius: 50%;
+    margin-left: 8px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+
+/* ----- Nav bar right extention ---- */
+.main {
+    display: flex;
+    margin-top: 60px;
+}
+
+.main-left {
+    width: 24%;
+    height: 100vh;
+    overflow: scroll;
+    position: fixed;
+    align-items: center;
+}
+
+.main-left::-webkit-scrollbar{
+    width: 7px;
+}
+.main-left::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: #ffffff;
+}
+
+.main-left:hover::-webkit-scrollbar-thumb {
+    background: #e1dfdf;
+}
+
+.img{
+    display: flex;
+    height: 40px;
+    margin: 5px 10px;
+
+}
+
+.img:hover{
+    background: #e8e7e7;
+    border-radius: 7px;
+}
+
+.img p {
+    padding: 14px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #252525;
+}
+
+.img img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5px 12px;
+}
+
+.main-left .icon {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: #252525;
+}
+
+.icon:hover {
+    background-color: #e8e7e7;
+}
+
+.icon i{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+/* fix the positon if icon, img, and text not the same  */
+
+
+
+.main-left .icon,
+.main-left .img {
+    display: flex;
+    align-items: center;
+    margin: 5px 10px;
+    padding: 5px 0; 
+}
+
+.icon i,
+.img img {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 12px; 
+}
+
+
+.icon p {
+    margin: 0; 
+    padding: 0; 
+    font-size: 14px;
+    font-weight: 600;
+    color: #252525;
+    white-space: nowrap;
+}
+
+.img p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #252525;
+    padding-left: 12px; 
 }
